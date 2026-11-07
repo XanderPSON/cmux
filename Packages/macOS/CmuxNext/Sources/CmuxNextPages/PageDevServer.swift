@@ -28,6 +28,7 @@ public nonisolated struct PageDevServer: Sendable, Equatable {
     static let pageIDs: Set<String> = [
         "cmux.apps",
         "cmux.artifacts",
+        "cmux.browser-toolbar",
         "cmux.changelog",
         "cmux.chief-inspector",
         "cmux.chief-usage",
@@ -50,6 +51,7 @@ public nonisolated struct PageDevServer: Sendable, Equatable {
         "cmux.machines",
         "cmux.markdown",
         "cmux.mobile-pairing",
+        "cmux.omnibox-popup",
         "cmux.page-info",
         "cmux.passwords",
         "cmux.settings",
