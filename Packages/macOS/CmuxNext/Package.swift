@@ -182,8 +182,8 @@ let daemonSwiftSettings: [SwiftSetting] = [
 /// when the FFI sources differ from the pinned source sha.
 let appFFI: Target = .binaryTarget(
     name: "CCmuxAppFFI",
-    url: "https://github.com/manaflow-ai/cmux/releases/download/cmux-app-ffi-2d7a228cbd4e454d173e300a7fb90bc51a32514f/CCmuxAppFFI.xcframework.zip",
-    checksum: "9e8bcbba41bda423441d16f34c0241468cdcdf64f35656acc485004a9146cd79"
+    url: "https://github.com/manaflow-ai/cmux/releases/download/cmux-app-ffi-102a433c848ea7cc578f1f320618aa4952a7298a/CCmuxAppFFI.xcframework.zip",
+    checksum: "749ed712e6ef17e460657a3d32bb116688a92e6fb60dcf467ac27aac579561a7"
 )
 
 // Debug-only product consumed by Prototypes/UiLayerHost. Keeping this leaf
@@ -641,7 +641,8 @@ let packageTargets: [Target] = uiLayerPreviewTargets + [
         .target(
             name: "CmuxNextBrowserImport",
             dependencies: [ // sorted: scripts/cmux-next/check-package-dependency-lists.py
-                "CCmuxAppFFI", // imported cookies' sync (cmux-cookie-sync; ImportCookieSync)
+                // CCmuxAppFFI: imported cookies' sync (cmux-cookie-sync; ImportCookieSync).
+                "CCmuxAppFFI",
                 "CmuxNextCompat",
                 "CmuxNextWakeups",
             ],
