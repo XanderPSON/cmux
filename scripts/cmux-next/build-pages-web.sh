@@ -53,7 +53,7 @@ stats
 tasks
 "
 # The browser chrome's pages (CmuxNextPages BrowserChromeWebHost).
-PAGES="$PAGES page-info"
+PAGES="$PAGES page-info browser-toolbar omnibox-popup"
 # Pages whose string table ships as one script per locale (locales/<locale>.js), loaded before the
 # app: only English and the active locale are parsed at open (R82 first-open speed).
 SPLIT_STRINGS="settings"
